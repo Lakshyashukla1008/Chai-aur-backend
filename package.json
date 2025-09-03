@@ -1,0 +1,16 @@
+{
+  "name": "chai-or-project",
+  "version": "1.0.0",
+  "description": "this is a vedio Series on backend with javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript",
+    "Backend",
+    "Chai"
+  ],
+  "author": "Lakshya shukla",
+  "license": "ISC"
+}
