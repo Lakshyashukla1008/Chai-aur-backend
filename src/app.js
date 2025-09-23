@@ -21,8 +21,10 @@ import userRouter from './routes/user.routes.js'
 
 
 //routes declaration
-app.use("/api/v1/users", userRouter)
+app.use("/api/v1/users", userRouter) //i found error in postmen just because of s in users
 
-// http://localhost:8000/users/register
+ 
+
+// http://localhost:8000/api/v1/users/register
 
 export {app}

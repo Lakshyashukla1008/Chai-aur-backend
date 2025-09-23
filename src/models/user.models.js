@@ -4,7 +4,7 @@ import bcrypt from "bcrypt"; // to hash the password before saving it to db
 
 const userSchema = new Schema(
     {
-        username: {
+        username: {        //i need for routes
             type: String,
             required: true,
             unique: true,
@@ -12,38 +12,38 @@ const userSchema = new Schema(
             trim: true,
             index: true // to make it faster for searching
         },
-        email: {
+        email: {           //i need for routes  
             type: String,
             required: true,
             lowercase: true,
             trim: true,
             unique: true,
         },
-        fullName: {
+        fullName: {        //i need for routes
             type: String,
             required: true,
             trim: true,
             index: true
         },
         avatar: {
-            type: String, // cloudinary url
+            type: String, // cloudinary url   //i need for routes
             trim: true,
             required: true,
         },
-        coverImage: {
+        coverImage: {     //i need for routes
             type: String,
         },
-        watchHistory: [
+        watchHistory: [   // i don't need it adding by programatically
             {
                 type: Schema.Types.ObjectId,
                 ref: "Video"
             }
         ],
-        password: {
+        password: {      //i need for routes
             type: String,
             required: [true, "password is required"]
         },
-        refreshToken: {
+        refreshToken: {      // i don't need it adding by programatically
             type: String, // for email verification and password reset
         },
     },
